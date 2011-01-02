@@ -81,6 +81,37 @@ PPU_SRCS		=	$(foreach dir,$(SOURCES),$(wildcard $(dir)/*.cpp)) $(foreach dir,$(S
 				$(FCEU_API_DIR)/utils/md5.cpp \
 				$(FCEU_API_DIR)/utils/memory.cpp \
 				$(FCEU_API_DIR)/utils/xstring.cpp
+#PPU_SRCS		+=	$(FCEU_API_DIR)/lua/src/lapi.c \
+				$(FCEU_API_DIR)/lua/src/luauxlib.c \
+				$(FCEU_API_DIR)/lua/src/lbaselib.c \
+				$(FCEU_API_DIR)/lua/src/lcode.c \
+				$(FCEU_API_DIR)/lua/src/ldblib.c \
+				$(FCEU_API_DIR)/lua/src/ldebug.c \
+				$(FCEU_API_DIR)/lua/src/ldo.c \
+				$(FCEU_API_DIR)/lua/src/ldump.c \
+				$(FCEU_API_DIR)/lua/src/lfunc.c \
+				$(FCEU_API_DIR)/lua/src/lgc.c \
+				$(FCEU_API_DIR)/lua/src/linit.c \
+				$(FCEU_API_DIR)/lua/src/liolib.c \
+				$(FCEU_API_DIR)/lua/src/llex.c \
+				$(FCEU_API_DIR)/lua/src/lmathlib.c \
+				$(FCEU_API_DIR)/lua/src/lmem.c \
+				$(FCEU_API_DIR)/lua/src/loadlib.c \
+				$(FCEU_API_DIR)/lua/src/lobject.c \
+				$(FCEU_API_DIR)/lua/src/lopcodes.c \
+				$(FCEU_API_DIR)/lua/src/loslib.c \
+				$(FCEU_API_DIR)/lua/src/lparser.c \
+				$(FCEU_API_DIR)/lua/src/lstate.c \
+				$(FCEU_API_DIR)/lua/src/lstring.c \
+				$(FCEU_API_DIR)/lua/src/lstrlib.c \
+				$(FCEU_API_DIR)/lua/src/ltable.c \
+				$(FCEU_API_DIR)/lua/src/ltablib.c \
+				$(FCEU_API_DIR)/lua/src/ltm.c \
+				$(FCEU_API_DIR)/lua/src/lundump.c \
+				$(FCEU_API_DIR)/lua/src/lvm.c \
+				$(FCEU_API_DIR)/lua/src/lzio.c \
+				$(FCEU_API_DIR)/lua/src/print.c \
+				$(FCEU_API_DIR)/lua-engine.cpp
 PPU_TARGET		=	fceu.ppu.elf
 
 PPU_CXXFLAGS		+=	-I. -I$(FCEU_API_DIR) -I$(UTIL_DIR)/zlib -I$(UTIL_DIR)/unzip -I$(UTIL_DIR)/sz -DPSS_STYLE=1 -DGEKKO -DPS3_SDK_3_41 \
@@ -95,6 +126,10 @@ PPU_CFLAGS		+=	-D_SZ_ONE_DIRECTORY -D_LZMA_IN_CB -D_LZMA_OUT_READ
 # enable FCEU frameskip
 PPU_CXXFLAGS		+=	-DFRAMESKIP 
 PPU_CFLAGS		+=	-DFRAMESKIP
+
+# enable LUA
+#PPU_CXXFLAGS		+=	-D_S9XLUA_H
+#PPU_CFLAGS		+=	-D_S9XLUA_H
 
 # enable FCEU debugging
 # enable telnet control console
