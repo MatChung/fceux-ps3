@@ -81,7 +81,7 @@ PPU_SRCS		=	$(foreach dir,$(SOURCES),$(wildcard $(dir)/*.cpp)) $(foreach dir,$(S
 				$(FCEU_API_DIR)/utils/md5.cpp \
 				$(FCEU_API_DIR)/utils/memory.cpp \
 				$(FCEU_API_DIR)/utils/xstring.cpp
-#PPU_SRCS		+=	$(FCEU_API_DIR)/lua/src/lapi.c \
+PPU_SRCS		+=	$(FCEU_API_DIR)/lua/src/lapi.c \
 				$(FCEU_API_DIR)/lua/src/lauxlib.c \
 				$(FCEU_API_DIR)/lua/src/lbaselib.c \
 				$(FCEU_API_DIR)/lua/src/lcode.c \
@@ -128,8 +128,8 @@ PPU_CXXFLAGS		+=	-DFRAMESKIP
 PPU_CFLAGS		+=	-DFRAMESKIP
 
 # enable LUA
-#PPU_CXXFLAGS		+=	-D_S9XLUA_H -I$(FCEU_API_DIR)/lua/src 
-#PPU_CFLAGS		+=	-D_S9XLUA_H -I$(FCEU_API_DIR)/lua/src
+PPU_CXXFLAGS		+=	-D_S9XLUA_H -I$(FCEU_API_DIR)/lua/src 
+PPU_CFLAGS		+=	-D_S9XLUA_H -I$(FCEU_API_DIR)/lua/src
 
 # enable FCEU debugging
 # enable telnet control console

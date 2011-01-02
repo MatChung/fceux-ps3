@@ -185,6 +185,45 @@ static const char *button_mappings[] = {
 	#define strnicmp strncasecmp
 #endif
 
+//BEGIN OF FCEU PS3
+/**
+ * Return the state of the mouse buttons.  Input 'd' is an array of 3
+ * integers that store <x, y, button state>.
+ */
+/*
+void GetMouseData(uint32 (&d)[3])
+{
+    int x,y;
+    uint32 t;
+
+    // Don't get input when a movie is playing back
+    if(FCEUMOV_Mode(MOVIEMODE_PLAY))
+        return;
+
+    // retrieve the state of the mouse from SDL
+    t = SDL_GetMouseState(&x, &y);
+
+    d[2] = 0;
+    if(t & SDL_BUTTON(1)) {
+        d[2] |= 0x1;
+    }
+    if(t & SDL_BUTTON(3)) {
+        d[2] |= 0x2;
+    }
+
+    // get the mouse position from the SDL video driver
+    t = PtoV(x, y);
+    d[0] = t & 0xFFFF;
+    d[1] = (t >> 16) & 0xFFFF;
+}
+*/
+
+void GetMouseData(uint32 (&d)[3])
+{
+}
+
+//END OF FCEU PS3
+
 static const char* luaCallIDStrings [] =
 {
 	"CALL_BEFOREEMULATION",

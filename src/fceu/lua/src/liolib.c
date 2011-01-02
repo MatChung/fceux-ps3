@@ -13,15 +13,19 @@
 #define liolib_c
 #define LUA_LIB
 
+FILE *tmpfile(void) 
+{
+static int count = 0; 
+count++; 
+char namebuf[64] = {0};
+snprintf(namebuf, sizeof(namebuf) - 1, "/path/to/tmpfile%d", count);
+return fopen(namebuf, "w+b");
+}
+
 #include "lua.h"
 
 #include "lauxlib.h"
 #include "lualib.h"
-
-#ifdef GEKKO
-extern FILE* tmpfile();
-#endif
-
 
 #define IO_INPUT	1
 #define IO_OUTPUT	2

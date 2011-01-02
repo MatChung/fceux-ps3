@@ -548,11 +548,42 @@ static int errfile (lua_State *L, const char *what, int fnameindex) {
   return LUA_ERRFILE;
 }
 
+static void CheckForValidFilenameWithPath(char* fullFilename, const char* filename, const char* platformPath)
+{
+ int i = 0;
+  int pathLen = (int)strlen(platformPath);
+  // Already have a filename with the correct path?
+  if ((int)strlen(filename) > pathLen)
+    for (i = 0; i < pathLen; i++)
+      if (filename[i] != platformPath[i])
+        break;
+
+  // Found path?
+  if (i == pathLen)
+  {
+    // Then just use the existing file, happens when loading libraries from Lua
+    strcpy(fullFilename, filename);
+  }
+  else
+  {
+    // Copy path
+    for (i = 0; i < pathLen; i++)
+      fullFilename[i] = platformPath[i];
+    // Add the relative filename
+    for (i = 0; i < (int)strlen(filename); i++)
+      fullFilename[i+pathLen] = filename[i];
+    // And finally close the string
+    fullFilename[(int)strlen(filename)+pathLen] = 0;
+  } // else
+} // CheckForValidFilenameWithPath(fullFilename, filename, platformPath)
 
 LUALIB_API int luaL_loadfile (lua_State *L, const char *filename) {
   LoadF lf;
   int status, readstatus;
   int c;
+//BEGINNING OF FCEU PS3
+char fullFilename[128];
+//END OF FCEU PS3
   int fnameindex = lua_gettop(L) + 1;  /* index of filename on the stack */
   lf.extraline = 0;
   if (filename == NULL) {
@@ -560,8 +591,16 @@ LUALIB_API int luaL_loadfile (lua_State *L, const char *filename) {
     lf.f = stdin;
   }
   else {
-    lua_pushfstring(L, "@%s", filename);
-    lf.f = fopen(filename, "r");
+//Note: Always open as the requested file, Lua should not care about
+//our crazy directory remapping
+lua_pushfstring(L, "@%s", filename);
+
+#if (PS3)
+// On the PS3, check always the /dev_hdd0/game/FCEU90000/USRDIR/Lua/ directory!
+CheckForValidFilenameWithPath(fullFilename, filename, "/dev_hdd0/game/FCEU90000/USRDIR/Lua/");
+#endif
+//Rest of this code is untouched, we just use fullFilename now!
+    lf.f = fopen(fullFilename, "r");
     if (lf.f == NULL) return errfile(L, "open", fnameindex);
   }
   c = getc(lf.f);
@@ -570,8 +609,8 @@ LUALIB_API int luaL_loadfile (lua_State *L, const char *filename) {
     while ((c = getc(lf.f)) != EOF && c != '\n') ;  /* skip first line */
     if (c == '\n') c = getc(lf.f);
   }
-  if (c == LUA_SIGNATURE[0] && filename) {  /* binary file? */
-    lf.f = freopen(filename, "rb", lf.f);  /* reopen in binary mode */
+  if (c == LUA_SIGNATURE[0] && fullFilename) {  /* binary file? */
+    lf.f = freopen(fullFilename, "rb", lf.f);  /* reopen in binary mode */
     if (lf.f == NULL) return errfile(L, "reopen", fnameindex);
     /* skip eventual `#!...' */
    while ((c = getc(lf.f)) != EOF && c != LUA_SIGNATURE[0]) ;

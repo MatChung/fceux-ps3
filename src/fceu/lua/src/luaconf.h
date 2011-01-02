@@ -80,6 +80,18 @@
 ** hierarchy or if you want to install your libraries in
 ** non-conventional directories.
 */
+#if defined(GEKKO)
+/* On the PS3 we just use the /app_home/Lua/ sub directory for everything,
+   all Lua files should be located there */
+#define LUA_LDIR    "/dev_hdd0/game/FCEU90000/USRDIR/Lua/"
+#define LUA_CDIR    "/dev_hdd0/game/FCEU90000/USRDIR"
+#define LUA_PATH_DEFAULT  \
+    LUA_LDIR"?.lua;"  LUA_LDIR"?\\init.lua;" \
+    LUA_CDIR"?.lua;"  LUA_CDIR"?\\init.lua"
+#define LUA_CPATH_DEFAULT \
+    ".\\?.dll;"  LUA_CDIR"?.dll;" LUA_CDIR"loadall.dll"
+#endif
+
 #if defined(_WIN32)
 /*
 ** In Windows, any exclamation mark ('!') in the path is replaced by the
