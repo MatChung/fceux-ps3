@@ -1319,7 +1319,7 @@ void do_controls_settings()
 						}
 						if(CellInput->WasButtonPressed(0, CTRL_SELECT))
 						{
-							Settings.AnalogR_Left_Type = !Settings.AnalogR_Left_Type;
+							Settings.AnalogL_Left_Type = !Settings.AnalogL_Left_Type;
 						}
 						break;
 						case SETTING_CONTROLS_ANALOG_L_RIGHT:
@@ -1345,7 +1345,7 @@ void do_controls_settings()
 						}
 						if(CellInput->WasButtonPressed(0, CTRL_SELECT))
 						{
-							Settings.AnalogR_Right_Type = !Settings.AnalogR_Right_Type;
+							Settings.AnalogL_Right_Type = !Settings.AnalogL_Right_Type;
 						}
 						break;
 						case SETTING_CONTROLS_DEFAULT_ALL:
