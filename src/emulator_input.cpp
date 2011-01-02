@@ -65,6 +65,7 @@ char * Input_PrintMappedButton(int mappedbutton)
 		case BTN_LOAD_MOVIE:
 			return "Load movie";
 			break;
+*/
 		case BTN_FASTFORWARD:
 			return "Fast forward";
 			break;
@@ -74,6 +75,7 @@ char * Input_PrintMappedButton(int mappedbutton)
 		case BTN_DECREMENTTURBO:
 			return "Decrement Fast-forward speed";
 			break;	
+/*
 		case BTN_SWAPJOYPADS:
 			return "Swap Joypads";
 			break;
@@ -139,16 +141,16 @@ int Input_GetAdjacentButtonmap(int buttonmap, bool next)
 			return next ? BTN_INCREMENTSAVE : BTN_CHEATDISABLE;
 			break;
 		case BTN_INCREMENTSAVE:
-			return next ? BTN_NONE : BTN_DECREMENTSAVE;
+			return next ? BTN_FASTFORWARD : BTN_DECREMENTSAVE;
 			break;
-/*
 		case BTN_FASTFORWARD:
-			return next ? BTN_DECREMENTTURBO : BTN_INCREMENTSAVE;
+			return next ? BTN_INCREMENTTURBO : BTN_INCREMENTSAVE;
 			break;
 		case BTN_DECREMENTTURBO:
 			return next ? BTN_INCREMENTTURBO : BTN_FASTFORWARD;
 		case BTN_INCREMENTTURBO:
-			return next ? BTN_RESET : BTN_DECREMENTTURBO;
+			return next ? BTN_NONE : BTN_DECREMENTTURBO;
+/*
 		case BTN_RESET:
 			return next ? BTN_SOFTRESET : BTN_INCREMENTTURBO;
 			break;
@@ -170,7 +172,7 @@ int Input_GetAdjacentButtonmap(int buttonmap, bool next)
 			return next ? BTN_NONE : BTN_LOAD_MOVIE;
 */
 		case BTN_NONE:
-			return next ? BTN_UP : BTN_INCREMENTSAVE;
+			return next ? BTN_UP : BTN_INCREMENTTURBO;
 			break;
 		default:
 			return BTN_NONE;
@@ -188,8 +190,11 @@ void Input_MapButton(int* buttonmap, bool next, int defaultbutton)
 	{
 		*buttonmap = defaultbutton;
 	}
+	//FIXME: Do something with this, or remove it
+	/*
 	if(*buttonmap == (BTN_LEFT | BTN_RIGHT | BTN_DOWN | BTN_UP | BTN_A | BTN_B | BTN_START | BTN_SELECT))
 	{
 	}
+	*/
 	MenuResetControlStyle();
 }

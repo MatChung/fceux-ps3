@@ -51,6 +51,17 @@ Emulator_Modes mode_switch = MODE_MENU;
 // is a ROM running
 bool emulation_running;
 
+bool lua_loaded = false;
+
+int frameSkipAmt = 18;
+int frameSkipCounter = 0; //Counter for managing frame skip
+
+bool turbo_enabled = false;
+
+int eoptions = 0;
+
+int fskip = 0;
+
 // is fceu loaded
 bool fceu_loaded = false;
 
@@ -67,6 +78,29 @@ string current_rom;
 bool Emulator_Initialized()
 {
 	return fceu_loaded;
+}
+
+bool Emulator_ToggleTurbo()
+{
+	turbo_enabled = !turbo_enabled;
+}
+
+void Emulator_TurboDecrement()
+{
+	if(frameSkipAmt != 0)
+	{
+		frameSkipAmt -= 1;
+	}
+}
+
+void Emulator_TurboIncrement()
+{
+	frameSkipAmt += 1;
+}
+
+int Emulator_GetTurboSpeed()
+{
+	return frameSkipAmt;
 }
 
 
@@ -151,6 +185,15 @@ int Emulator_CloseGame()
     if(!rom_loaded) {
         return(0);
     }
+//FIXME: Lua - Implement this
+/*
+#ifdef _S9XLUA_H
+if(lua_loaded)
+{
+	FCEU_LuaStop(); // kill lua script before the gui dies
+}
+#endif
+*/
     FCEUI_CloseGame();
     GameInfo = 0;
     return(1);
@@ -295,6 +338,9 @@ int special_button_mappings(int controllerno, int specialbuttonmap)
 	(specialbuttonmap != BTN_DECREMENTCHEAT) &&
 	(specialbuttonmap != BTN_INCREMENTSAVE) &&
 	(specialbuttonmap != BTN_DECREMENTSAVE) &&
+	(specialbuttonmap != BTN_FASTFORWARD) &&
+	(specialbuttonmap != BTN_INCREMENTTURBO) &&
+	(specialbuttonmap != BTN_DECREMENTTURBO) &&
 	(specialbuttonmap != BTN_NONE))
 	{
 		pad[controllerno] |= specialbuttonmap;
@@ -340,6 +386,21 @@ int special_button_mappings(int controllerno, int specialbuttonmap)
 				break;
 			case BTN_QUICKLOAD:
 				FCEUI_LoadState(NULL);
+				break;
+			case BTN_FASTFORWARD:
+				Emulator_ToggleTurbo();
+				sprintf(msg, turbo_enabled ? "Fast-forwarding enabled" : "Fast-forwarding disabled");
+				FCEUD_Message(msg);
+				break;
+			case BTN_INCREMENTTURBO:
+				Emulator_TurboIncrement();
+				sprintf(msg, "Fast-forwarding speed set to: %d", Emulator_GetTurboSpeed());
+				FCEUD_Message(msg);
+				break;
+			case BTN_DECREMENTTURBO:
+				Emulator_TurboDecrement();
+				sprintf(msg, "Fast-forwarding speed set to: %d", Emulator_GetTurboSpeed());
+				FCEUD_Message(msg);
 				break;
 			default:
 				break;
@@ -472,19 +533,19 @@ void UpdateInput()
 		{
 			special_button_mappings(i,Settings.ButtonR2_AnalogR_Down);
 		}
-		if (Settings.AnalogR_Down_Type ? CellInput->IsAnalogPressedDown(i,CTRL_RSTICK) : CellInput->WasAnalogPressedDown(i,CTRL_RSTICK))
+		if (Settings.AnalogR_Down_Type ? CellInput->IsAnalogPressedDown(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)) : CellInput->WasAnalogPressedDown(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)))
 		{
 			special_button_mappings(i,Settings.AnalogR_Down);
 		}
-		if (Settings.AnalogR_Up_Type ? CellInput->IsAnalogPressedUp(i,CTRL_RSTICK) : CellInput->WasAnalogPressedUp(i,CTRL_RSTICK))
+		if (Settings.AnalogR_Up_Type ? CellInput->IsAnalogPressedUp(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)) : CellInput->WasAnalogPressedUp(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)))
 		{
 			special_button_mappings(i,Settings.AnalogR_Up);
 		}
-		if (Settings.AnalogR_Left_Type ? CellInput->IsAnalogPressedLeft(i,CTRL_RSTICK) : CellInput->WasAnalogPressedLeft(i,CTRL_RSTICK))
+		if (Settings.AnalogR_Left_Type ? CellInput->IsAnalogPressedLeft(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)) : CellInput->WasAnalogPressedLeft(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)))
 		{
 			special_button_mappings(i,Settings.AnalogR_Left);
 		}
-		if (Settings.AnalogR_Right_Type ? CellInput->IsAnalogPressedRight(i,CTRL_RSTICK) : CellInput->WasAnalogPressedRight(i,CTRL_RSTICK))
+		if (Settings.AnalogR_Right_Type ? CellInput->IsAnalogPressedRight(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)) : CellInput->WasAnalogPressedRight(i,CTRL_RSTICK) && !(CellInput->IsButtonPressed(i,CTRL_L2)))
 		{
 			special_button_mappings(i,Settings.AnalogR_Right);
 		}
@@ -547,6 +608,35 @@ void FCEUD_Update(uint8 *XBuf, int32 *Buffer, int32 Count)
         {
         	CellAudio->write((int16_t*)Buffer, Count * 2);
         }
+
+	extern bool JustFrameAdvanced;
+	bool throttle = true;
+	//FIXME: Remove this?
+	/*
+	if( (eoptions&EO_NOTHROTTLE) )
+	{
+	}
+	*/
+
+	/*
+	if(throttle) //if throttling is enabled...
+		if(!turboenabled) //and turbo is disabled
+			if(!FCEUI_EmulationPaused()
+				||JustFrameAdvanced
+				)
+				//then throttle
+				while(SpeedThrottle()) {
+					FCEUD_UpdateInput();
+					}
+	*/
+
+	if(!JustFrameAdvanced && FCEUI_EmulationPaused())
+	{
+		sys_timer_usleep(50);
+	}
+
+	//FIXME: Implement this?
+	//FCEUD_UpdateInput();
 }
 
 void Emulator_ToggleSound()
@@ -612,8 +702,6 @@ void EmulationLoop()
 	// FIXME: verify this is the correct place to do this
 	memset(FDSBIOS, 0, sizeof(FDSBIOS)); // clear FDS BIOS memory
 
-	// FIXME: implement for real
-	int fskip = 0;
 
 	LOG_DBG("Videomode: %s\n", GameInfo->vidsys == 1 ? "PAL" : "NTSC");
 
@@ -625,8 +713,30 @@ void EmulationLoop()
 	{
 		UpdateInput();
 
-        FCEUI_Emulate(&gfx, &sound, &ssize, fskip);
-        FCEUD_Update(gfx, sound, ssize);
+		if (turbo_enabled)
+		{	
+			if(!frameSkipCounter)
+			{
+				frameSkipCounter = frameSkipAmt;
+				fskip = 0;
+			}
+			else
+			{
+				frameSkipCounter--;
+				/*
+				if (muteTurbo) fskip = 2;
+				else
+				*/
+				fskip = 1;
+			}
+		}
+		else
+		{
+			fskip = 0;
+		}
+
+        	FCEUI_Emulate(&gfx, &sound, &ssize, fskip);
+        	FCEUD_Update(gfx, sound, ssize);
 
 #ifdef EMUDEBUG
 		if (CellConsole_IsInitialized())

@@ -41,6 +41,7 @@ void Emulator_FceuSetPaths();
 
 void Emulator_GraphicsInit();
 
+extern int eoptions;
 extern Audio::Stream<int16_t>* 	CellAudio;
 extern CellInputFacade* 		CellInput;
 extern FceuGraphics* 			Graphics;
