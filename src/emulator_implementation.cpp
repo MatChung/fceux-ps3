@@ -314,6 +314,16 @@ void Emulator_Implementation_ButtonMappingSettings(bool map_button_option_enum)
 			currentconfig.SetBool("PS3ButtonMappings::AnalogR_Down_Type",Settings.AnalogR_Down_Type);
 			currentconfig.SetBool("PS3ButtonMappings::AnalogR_Left_Type",Settings.AnalogR_Left_Type);
 			currentconfig.SetBool("PS3ButtonMappings::AnalogR_Right_Type",Settings.AnalogR_Right_Type);
+
+			currentconfig.SetInt("PS3ButtonMappings::AnalogL_Up",Settings.AnalogL_Up);
+			currentconfig.SetInt("PS3ButtonMappings::AnalogL_Down",Settings.AnalogL_Down);
+			currentconfig.SetInt("PS3ButtonMappings::AnalogL_Left",Settings.AnalogL_Left);
+			currentconfig.SetInt("PS3ButtonMappings::AnalogL_Right",Settings.AnalogL_Right);
+
+			currentconfig.SetBool("PS3ButtonMappings::AnalogL_Up_Type",Settings.AnalogL_Up_Type);
+			currentconfig.SetBool("PS3ButtonMappings::AnalogL_Down_Type",Settings.AnalogL_Down_Type);
+			currentconfig.SetBool("PS3ButtonMappings::AnalogL_Left_Type",Settings.AnalogL_Left_Type);
+			currentconfig.SetBool("PS3ButtonMappings::AnalogL_Right_Type",Settings.AnalogL_Right_Type);
 			break;
 		case MAP_BUTTONS_OPTION_GETTER:
 			Settings.DPad_Up		= currentconfig.GetInt("PS3ButtonMappings::DPad_Up",BTN_UP);
@@ -354,6 +364,16 @@ void Emulator_Implementation_ButtonMappingSettings(bool map_button_option_enum)
 			Settings.AnalogR_Down_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogR_Down_Type",false);
 			Settings.AnalogR_Left_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogR_Left_Type",false);
 			Settings.AnalogR_Right_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogR_Right_Type",false);
+
+			Settings.AnalogL_Up		= currentconfig.GetInt("PS3ButtonMappings::AnalogL_Up",BTN_UP);
+			Settings.AnalogL_Down		= currentconfig.GetInt("PS3ButtonMappings::AnalogL_Down",BTN_DOWN);
+			Settings.AnalogL_Left		= currentconfig.GetInt("PS3ButtonMappings::AnalogL_Left",BTN_LEFT);
+			Settings.AnalogL_Right		= currentconfig.GetInt("PS3ButtonMappings::AnalogL_Right",BTN_RIGHT);
+
+			Settings.AnalogL_Up_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogL_Up_Type",true);
+			Settings.AnalogL_Down_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogL_Down_Type",true);
+			Settings.AnalogL_Left_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogL_Left_Type",true);
+			Settings.AnalogL_Right_Type	= currentconfig.GetBool("PS3ButtonMappings::AnalogL_Right_Type",true);
 			break;
 		case MAP_BUTTONS_OPTION_DEFAULT:
 			Settings.DPad_Up			= BTN_UP;
@@ -393,6 +413,14 @@ void Emulator_Implementation_ButtonMappingSettings(bool map_button_option_enum)
 			Settings.AnalogR_Down_Type		= false;
 			Settings.AnalogR_Left_Type		= false;
 			Settings.AnalogR_Right_Type		= false;
+			Settings.AnalogL_Up			= BTN_UP;
+			Settings.AnalogL_Down			= BTN_DOWN;
+			Settings.AnalogL_Left			= BTN_LEFT;
+			Settings.AnalogL_Right			= BTN_RIGHT;
+			Settings.AnalogL_Up_Type		= true;
+			Settings.AnalogL_Down_Type		= true;
+			Settings.AnalogL_Left_Type		= true;
+			Settings.AnalogL_Right_Type		= true;
 			break;
 	}
 }

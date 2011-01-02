@@ -356,19 +356,19 @@ void UpdateInput()
 	for (uint8_t i = 0; i < pads_connected; ++i) {
 		CellInput->UpdateDevice(i);
 
-    		if (CellInput->IsButtonPressed(i, CTRL_UP) | CellInput->IsAnalogPressedUp(i, CTRL_LSTICK))
+    		if (CellInput->IsButtonPressed(i, CTRL_UP))
 		{
 			special_button_mappings(i,Settings.DPad_Up);
 		}
-		else if (CellInput->IsButtonPressed(i,CTRL_DOWN) | CellInput->IsAnalogPressedDown(i, CTRL_LSTICK))
+		else if (CellInput->IsButtonPressed(i,CTRL_DOWN))
 		{
 			special_button_mappings(i,Settings.DPad_Down);
 		}
-    		if (CellInput->IsButtonPressed(i,CTRL_LEFT) | CellInput->IsAnalogPressedLeft(i, CTRL_LSTICK))
+    		if (CellInput->IsButtonPressed(i,CTRL_LEFT))
 		{
 			special_button_mappings(i,Settings.DPad_Left);
 		}
-    		else if (CellInput->IsButtonPressed(i,CTRL_RIGHT) | CellInput->IsAnalogPressedRight(i, CTRL_LSTICK))
+    		else if (CellInput->IsButtonPressed(i,CTRL_RIGHT))
 		{
 			special_button_mappings(i,Settings.DPad_Right);
 		}
@@ -487,6 +487,23 @@ void UpdateInput()
 		if (Settings.AnalogR_Right_Type ? CellInput->IsAnalogPressedRight(i,CTRL_RSTICK) : CellInput->WasAnalogPressedRight(i,CTRL_RSTICK))
 		{
 			special_button_mappings(i,Settings.AnalogR_Right);
+		}
+
+		if (Settings.AnalogL_Down_Type ? CellInput->IsAnalogPressedDown(i,CTRL_LSTICK) : CellInput->WasAnalogPressedDown(i,CTRL_LSTICK))
+		{
+			special_button_mappings(i,Settings.AnalogL_Down);
+		}
+		if (Settings.AnalogL_Up_Type ? CellInput->IsAnalogPressedUp(i,CTRL_LSTICK) : CellInput->WasAnalogPressedUp(i,CTRL_LSTICK))
+		{
+			special_button_mappings(i,Settings.AnalogL_Up);
+		}
+		if (Settings.AnalogL_Left_Type ? CellInput->IsAnalogPressedLeft(i,CTRL_LSTICK) : CellInput->WasAnalogPressedLeft(i,CTRL_LSTICK))
+		{
+			special_button_mappings(i,Settings.AnalogL_Left);
+		}
+		if (Settings.AnalogL_Right_Type ? CellInput->IsAnalogPressedRight(i,CTRL_LSTICK) : CellInput->WasAnalogPressedRight(i,CTRL_LSTICK))
+		{
+			special_button_mappings(i,Settings.AnalogL_Right);
 		}
 	}
 	JSReturn = pad[0] | pad[1] << 8 | pad[2] << 16 | pad[3] << 24;

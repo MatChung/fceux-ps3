@@ -465,11 +465,14 @@ struct SSettings
 	bool		AnalogR_Down_Type;
 	bool		AnalogR_Left_Type;
 	bool		AnalogR_Right_Type;
-//UNUSED RIGHT NOW
 	int		AnalogL_Left;
 	int		AnalogL_Right;
 	int		AnalogL_Up;
 	int		AnalogL_Down;
+	bool		AnalogL_Up_Type;
+	bool		AnalogL_Down_Type;
+	bool		AnalogL_Left_Type;
+	bool		AnalogL_Right_Type;
 };
 
 extern struct SSettings			Settings;
