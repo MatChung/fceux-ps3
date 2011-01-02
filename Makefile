@@ -82,7 +82,7 @@ PPU_SRCS		=	$(foreach dir,$(SOURCES),$(wildcard $(dir)/*.cpp)) $(foreach dir,$(S
 				$(FCEU_API_DIR)/utils/memory.cpp \
 				$(FCEU_API_DIR)/utils/xstring.cpp
 #PPU_SRCS		+=	$(FCEU_API_DIR)/lua/src/lapi.c \
-				$(FCEU_API_DIR)/lua/src/luauxlib.c \
+				$(FCEU_API_DIR)/lua/src/lauxlib.c \
 				$(FCEU_API_DIR)/lua/src/lbaselib.c \
 				$(FCEU_API_DIR)/lua/src/lcode.c \
 				$(FCEU_API_DIR)/lua/src/ldblib.c \
