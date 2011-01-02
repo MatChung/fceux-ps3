@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/fceultra/!svn/ver/95/fceu/src/fir
+END
+c48000ntsc.coef
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c48000ntsc.coef
+END
+c44100pal.coef
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c44100pal.coef
+END
+c96000ntsc.coef
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c96000ntsc.coef
+END
+c44100ntsc.scm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c44100ntsc.scm
+END
+c48000pal.coef
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c48000pal.coef
+END
+c48000ntsc.scm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c48000ntsc.scm
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/fceultra/!svn/ver/95/fceu/src/fir/SConscript
+END
+c44100pal.scm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c44100pal.scm
+END
+c44100ntsc.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c44100ntsc.h
+END
+c96000pal.coef
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c96000pal.coef
+END
+c96000ntsc.scm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c96000ntsc.scm
+END
+c48000pal.scm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c48000pal.scm
+END
+c48000ntsc.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c48000ntsc.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/README
+END
+c44100pal.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c44100pal.h
+END
+c96000ntsc.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c96000ntsc.h
+END
+c96000pal.scm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c96000pal.scm
+END
+c48000pal.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c48000pal.h
+END
+c96000pal.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c96000pal.h
+END
+toh.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/toh.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/Makefile
+END
+c44100ntsc.coef
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/81/fceu/src/fir/c44100ntsc.coef
+END

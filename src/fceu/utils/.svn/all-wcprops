@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/fceultra/!svn/ver/2078/fceu/src/utils
+END
+endian.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/1916/fceu/src/utils/endian.cpp
+END
+xstring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/2042/fceu/src/utils/xstring.cpp
+END
+ConvertUTF.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/775/fceu/src/utils/ConvertUTF.c
+END
+endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/2078/fceu/src/utils/endian.h
+END
+xstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/2042/fceu/src/utils/xstring.h
+END
+ConvertUTF.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/775/fceu/src/utils/ConvertUTF.h
+END
+unzip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/273/fceu/src/utils/unzip.cpp
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/1274/fceu/src/utils/SConscript
+END
+memory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/2056/fceu/src/utils/memory.cpp
+END
+unzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/fceultra/!svn/ver/102/fceu/src/utils/unzip.h
+END
+crc32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/102/fceu/src/utils/crc32.cpp
+END
+memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/2056/fceu/src/utils/memory.h
+END
+general.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/102/fceu/src/utils/general.cpp
+END
+valuearray.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/479/fceu/src/utils/valuearray.h
+END
+crc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/fceultra/!svn/ver/102/fceu/src/utils/crc32.h
+END
+general.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/102/fceu/src/utils/general.h
+END
+md5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/1314/fceu/src/utils/md5.cpp
+END
+guid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/1063/fceu/src/utils/guid.cpp
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/fceultra/!svn/ver/455/fceu/src/utils/md5.h
+END
+guid.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/fceultra/!svn/ver/479/fceu/src/utils/guid.h
+END

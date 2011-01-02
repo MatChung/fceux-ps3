@@ -1,0 +1,76 @@
+==================================
+ -- PS3 profiling with STIOSRV --
+==================================
+
+It is now possible to perform code profiling on a retail PS3.
+
+When GCOV dumps it final profiling data, it will dump its data with stdio to a virtual location that the debugging environment is supposed to pick up and deal with.
+
+On a retail PS3, we don't have this option. Only option available to us is to reimplement the whole standard IO interface and overwrite all references to stdio during link phase. When GCOV runs in the atexit()-handlers, it will use the overwritten STDIO interface, thus allowing us to do whatever we want with the data, as long as we completely implement the interface.
+
+To do this, we will need a server that can act as our debugging host. The stdio_serv program in extra/network-stdio-serv/ does this. Compile the program for Unix with make. Win32 support is not implemented yet, but should be easy enough to port to Winsock.
+
+
+===================================
+ -- Intrumenting your application
+===================================
+
+Sadly, since this is a hacky hack, we have to intrument our application a bit.
+
+==========
+Sources:
+==========
+
+You will have to include these files into your build:
+
+network-stdio/net_stdio.cpp
+network/Poller.cpp
+network/TCPSocket.cpp
+network/Socket.cpp
+
+
+=========
+Code:
+=========
+
+net_stdio is a state machine. You can toggle between internal stdio (where all stdio usage usually will be as you'd normally expect), and the network hook.
+
+There are three API calls in network-stdio/net_stdio.h to interface with:
+
+void net_stdio_enable(int enable);
+void net_stdio_set_target(const char *host, uint16_t port);
+void net_stdio_set_paths(const char *path, int strip);
+
+If net_stdio_enable is given a non-zero value, all further calls to fopen() will be rerouted to a networked stream. Given a zero value, all further fopen() calls will be a normal FILE stream as implemented by stdio.
+Toggling this will not change the status of any already opened stream.
+
+If you only need to dump profiling data, it is advised to only enable net_stdio right before any call to exit() happens.
+
+The ending sequence will look something like this:
+
+net_stdio_enable(1);
+net_stdio_set_target("10.0.0.4", 9001);
+net_stdio_set_paths("/home/foo", 2);
+exit(0);
+
+net_stdio_set_target() will set IP address and port of the stdio_serv.
+net_stdio_set_paths() provides a way to mangle the paths as given by the PS3 in order to map them correctly over to the target environment should this be desired.
+
+path will set a path that will prepend all paths given to the library. Thus, if path is set to e.g. "/tmp/foobar/" and fopen is given a path "test.txt", the final path sent to stdio_serv will be "/tmp/foobar/text.txt".
+
+It is also possible to strip of directory paths for paths sent into fopen(). E.g. with a strip value of 3 and path set to "/home/foo", an fopen() path of "/I/HERD/U/LIEK/GCOV/foo.txt", will be turned into the path: "/home/foo/LIEK/GCOV/foo.txt". Just experiment with this to find the correct settings. :)
+
+=============
+Linking:
+=============
+
+To make sure that we're using net_stdio overriding lib, we have to use some link flags.
+Add this to your link step.
+
+LINK_LIBS += -Wl,-wrap,fopen -Wl,-wrap,fclose -Wl,-wrap,fwrite -Wl,-wrap,fread -Wl,-wrap,fseek -Wl,-wrap,ftell -Wl,-wrap,fflush -Wl,-wrap,rewind -Wl,-wrap,fgetpos -Wl,-wrap,fsetpos -Wl,-wrap,setbuf -Wl,-wrap,setvbuf -Wl,-wrap,ungetc -Wl,-wrap,feof
+
+After building, verify that the stdio calls were wrapped up by doing this:
+
+ppu-lv2-objdump -d foo.ppu.elf | grep __wrap_fopen
+
+Happy performance profiling! :)

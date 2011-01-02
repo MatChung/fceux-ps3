@@ -1,0 +1,120 @@
+********************
+FCEU-PS3
+
+
+shinhalsafar@gmail.com
+********************
+
+
+CURRENTLY IMPLEMENTED FCEU FUNCTIONS
+========================
+- .zip support
+- SRAM support
+- State save
+- 4P Support
+- Settings save and load
+- Shader support (Cg format)
+	- Not all shaders run full speed at 1080p.
+	- Try lower the resolution for shaders which run slow.
+	- Aspect ratio makes a difference as well.
+
+
+CONTROLS IN ROM MENU
+========================
+Up - Go up
+Down - Go down
+Left - Go back five file entries
+Right - Go forward five file entries
+L1 - Go back one page
+R1 - Go forward one page
+
+Cross - (If directory selected) enter directory/ (if ROM selected) start ROM
+Triangle - Same as Cross
+Circle - (If not in root directory) Go back to previous directory
+L2 + R2 - (If you previously exited a ROM) return to game
+Select - Go to settings menu (see 'CONTROLS IN SETTINGS MENU' section)
+
+L2+L3 - State Load
+R2+R3 - State Save
+
+
+CONTROLS IN SETTINGS MENU
+========================
+Up - Go up one setting
+Down - Go down one setting
+Left - Change setting to the left
+Right - Change setting to the right
+
+Circle - Go back to ROM menu
+
+
+EXPLANATION OF SETTINGS MENU
+========================
+Display framerate - This will show the FPS (Frames Per Second) onscreen
+Current save state slot - Toggle FCEU save state slot. 
+Resolution - Switch between resolutions - 480p mode, 720p mode and 1080p mode (depending on your monitor's supported resolutions)
+Aspect Ratio - Switch between aspect ratios 4:3 and 16:10 (16:9 will come shortly, for now choose 16:10 on widescreen - perhaps small
+cutoff at left and right))
+Hardware Filtering - Switch between Linear interpolation (Bilinear filtering) and Point filtering.
+Control Style - Switch between original NES style or the more preferred SNES style.
+Shader - Select a shader to use.
+
+
+CONTROLS IN-GAME
+========================
+Standard NES Controls (layout identical to NES controller)
+Better NES Controls (rotates input changing Square->B, Cross->A)
+
+R3 + L3 - Press these two buttons together while in-game to go back to the ROM browser menu.
+
+Right analog left / right - Adjust save state on the fly.
+
+
+SOURCE CODE REPOSITORY
+========================
+This release corresponds with revision = 92da225e5a	
+
+Source code repository is here:
+
+https://code.google.com/p/fceu-ps3/
+
+
+COMPILATION INSTRUCTIONS
+========================
+NOTE: ONLY FOLLOW STEP 1 IF YOU HAVE SDK 1.92 OR LOWER
+1 - Edit the Makefile and remove the following from PPU_CXX_FLAGS and PPU_CFLAGS:
+
+-DPS3_SDK_3_41
+
+3 - Do 'make clean && make && make pkg'
+
+
+CURRENTLY KNOWN ISSUES (v1.3)
+========================
+* PAL games do not run properly.
+* Please start reporting them on the google code bug tracker
+
+
+HD TV USERS
+========================
+* For people running this on HDTVs complaining about input lag:
+- Turn off all post-processing filters you may have running - on Sony Bravia HDTVs, display Motion Flow (this also causes input lags
+with most games in general, not just this SNES emu. If your HDTV has a 'Game' mode or something of the sort, select that as well.
+
+
+PERFORMANCE NOTES
+========================
+* Stock shader will run all games at 60fps.
+* Some shaders are very taxing currently.
+* PAL runs way to fast.
+
+
+PLANNED IMPROVEMENTS
+========================
+- GameGenie
+- Pretty GUI.
+
+
+SPECIAL THANKS
+========================
+- See the entire cellframework team.

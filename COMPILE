@@ -1,0 +1,10 @@
+=====
+LINUX
+=====
+make
+make pkg
+
+
+Test a shader:
+sce-cgc -profile sce_vp_rsx -entry "main_vertex" shaders/superEagle.cg 
+sce-cgc -profile sce_fp_rsx -entry "main_fragment" shaders/superEagle.cg

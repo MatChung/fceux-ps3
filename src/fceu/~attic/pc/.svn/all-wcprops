@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc
+END
+sdl-opengl.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-opengl.c
+END
+throttle.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/throttle.c
+END
+sdl-opengl.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-opengl.h
+END
+vgatweak.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/vgatweak.c
+END
+throttle.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/throttle.h
+END
+dos-sound.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-sound.c
+END
+sdl-icon.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-icon.h
+END
+sdl-joystick.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-joystick.c
+END
+dos-sound.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-sound.h
+END
+sdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl.c
+END
+dos-joystick.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-joystick.c
+END
+dos-keyboard.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-keyboard.c
+END
+sdl-throttle.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-throttle.c
+END
+sdl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl.h
+END
+dos-joystick.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-joystick.h
+END
+dos-video.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-video.c
+END
+sdl-netplay.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-netplay.c
+END
+unix-netplay.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/unix-netplay.c
+END
+dos-video.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-video.h
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/input.c
+END
+sdl-netplay.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-netplay.h
+END
+unix-netplay.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/unix-netplay.h
+END
+keyscan.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/keyscan.h
+END
+input.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/input.h
+END
+dface.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dface.h
+END
+sdl-sound.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-sound.c
+END
+usage.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/usage.h
+END
+dos-mouse.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos-mouse.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/main.c
+END
+dos.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos.c
+END
+sdl-video.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-video.c
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/main.h
+END
+dos.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/dos.h
+END
+sdl-video.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/~attic/pc/sdl-video.h
+END

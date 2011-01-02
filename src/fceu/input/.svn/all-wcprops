@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/fceultra/!svn/ver/2048/fceu/src/input
+END
+zapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/486/fceu/src/input/zapper.cpp
+END
+fkb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/fkb.cpp
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/95/fceu/src/input/SConscript
+END
+zapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/1553/fceu/src/input/zapper.h
+END
+suborkb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/suborkb.cpp
+END
+share.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/fceultra/!svn/ver/411/fceu/src/input/share.h
+END
+fkb.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/fceultra/!svn/ver/81/fceu/src/input/fkb.h
+END
+ftrainer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/ftrainer.cpp
+END
+suborkb.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/81/fceu/src/input/suborkb.h
+END
+cursor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/481/fceu/src/input/cursor.cpp
+END
+powerpad.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/powerpad.cpp
+END
+mahjong.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/mahjong.cpp
+END
+shadow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/fceultra/!svn/ver/419/fceu/src/input/shadow.cpp
+END
+hypershot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/hypershot.cpp
+END
+quiz.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/quiz.cpp
+END
+mouse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/mouse.cpp
+END
+arkanoid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/arkanoid.cpp
+END
+toprider.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/401/fceu/src/input/toprider.cpp
+END
+bworld.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/2048/fceu/src/input/bworld.cpp
+END
+oekakids.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/419/fceu/src/input/oekakids.cpp
+END

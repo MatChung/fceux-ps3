@@ -1,0 +1,581 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/fceultra/!svn/ver/2080/fceu/src/drivers/win
+END
+input.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/1910/fceu/src/drivers/win/input.cpp
+END
+args.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/2015/fceu/src/drivers/win/args.h
+END
+replay.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/1830/fceu/src/drivers/win/replay.h
+END
+palette.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/1355/fceu/src/drivers/win/palette.h
+END
+luaconsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/1836/fceu/src/drivers/win/luaconsole.cpp
+END
+joystick.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1872/fceu/src/drivers/win/joystick.h
+END
+ppuview.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/598/fceu/src/drivers/win/ppuview.h
+END
+ram_search.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/2064/fceu/src/drivers/win/ram_search.cpp
+END
+keyboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/525/fceu/src/drivers/win/keyboard.h
+END
+video.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/2080/fceu/src/drivers/win/video.cpp
+END
+window.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2042/fceu/src/drivers/win/window.cpp
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/419/fceu/src/drivers/win/config.h
+END
+guiconfig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/fceultra/!svn/ver/1923/fceu/src/drivers/win/guiconfig.cpp
+END
+throttle.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/396/fceu/src/drivers/win/throttle.h
+END
+directories.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/194/fceu/src/drivers/win/directories.h
+END
+log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/1758/fceu/src/drivers/win/log.cpp
+END
+ntview.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/81/fceu/src/drivers/win/ntview.h
+END
+gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/198/fceu/src/drivers/win/gui.cpp
+END
+debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/81/fceu/src/drivers/win/debug.h
+END
+debuggersp.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1822/fceu/src/drivers/win/debuggersp.h
+END
+joystick.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1872/fceu/src/drivers/win/joystick.cpp
+END
+ppuview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/1758/fceu/src/drivers/win/ppuview.cpp
+END
+Win32InputBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/518/fceu/src/drivers/win/Win32InputBox.h
+END
+keyscan.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/92/fceu/src/drivers/win/keyscan.h
+END
+config.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2018/fceu/src/drivers/win/config.cpp
+END
+throttle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1899/fceu/src/drivers/win/throttle.cpp
+END
+ramwatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/2073/fceu/src/drivers/win/ramwatch.cpp
+END
+ram_search.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1858/fceu/src/drivers/win/ram_search.h
+END
+memwatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1363/fceu/src/drivers/win/memwatch.h
+END
+texthook.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/962/fceu/src/drivers/win/texthook.h
+END
+video.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/1996/fceu/src/drivers/win/video.h
+END
+netplay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/357/fceu/src/drivers/win/netplay.cpp
+END
+memviewsp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/fceultra/!svn/ver/1209/fceu/src/drivers/win/memviewsp.cpp
+END
+guiconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/194/fceu/src/drivers/win/guiconfig.h
+END
+tracer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2041/fceu/src/drivers/win/tracer.cpp
+END
+debugger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/2043/fceu/src/drivers/win/debugger.cpp
+END
+archive.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/767/fceu/src/drivers/win/archive.h
+END
+debuggersp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/1822/fceu/src/drivers/win/debuggersp.cpp
+END
+sound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/1899/fceu/src/drivers/win/sound.cpp
+END
+7z.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/607/fceu/src/drivers/win/7z.dll
+END
+gui.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/198/fceu/src/drivers/win/gui.h
+END
+Win32InputBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/fceultra/!svn/ver/1989/fceu/src/drivers/win/Win32InputBox.cpp
+END
+monitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/240/fceu/src/drivers/win/monitor.h
+END
+pref.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/1822/fceu/src/drivers/win/pref.cpp
+END
+timing.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/194/fceu/src/drivers/win/timing.h
+END
+mapinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/974/fceu/src/drivers/win/mapinput.h
+END
+oakra.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/396/fceu/src/drivers/win/oakra.h
+END
+wave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/1841/fceu/src/drivers/win/wave.cpp
+END
+memwatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1950/fceu/src/drivers/win/memwatch.cpp
+END
+texthook.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1841/fceu/src/drivers/win/texthook.cpp
+END
+ramwatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2023/fceu/src/drivers/win/ramwatch.h
+END
+memview.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/1832/fceu/src/drivers/win/memview.h
+END
+state.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/1841/fceu/src/drivers/win/state.cpp
+END
+netplay.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/81/fceu/src/drivers/win/netplay.h
+END
+memviewsp.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/491/fceu/src/drivers/win/memviewsp.h
+END
+archive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/2072/fceu/src/drivers/win/archive.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/2072/fceu/src/drivers/win/main.cpp
+END
+cheat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/1951/fceu/src/drivers/win/cheat.cpp
+END
+tracer.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/81/fceu/src/drivers/win/tracer.h
+END
+cdlogger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1841/fceu/src/drivers/win/cdlogger.cpp
+END
+timing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/205/fceu/src/drivers/win/timing.cpp
+END
+OutputDS.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1128/fceu/src/drivers/win/OutputDS.cpp
+END
+monitor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/1758/fceu/src/drivers/win/monitor.cpp
+END
+help.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/1598/fceu/src/drivers/win/help.cpp
+END
+common.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1888/fceu/src/drivers/win/common.cpp
+END
+debugger.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1822/fceu/src/drivers/win/debugger.h
+END
+args.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/2039/fceu/src/drivers/win/args.cpp
+END
+replay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2078/fceu/src/drivers/win/replay.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2079/fceu/src/drivers/win/resource.h
+END
+mapinput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1411/fceu/src/drivers/win/mapinput.cpp
+END
+afxres.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/1598/fceu/src/drivers/win/afxres.h
+END
+sound.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/1513/fceu/src/drivers/win/sound.h
+END
+palette.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/1836/fceu/src/drivers/win/palette.cpp
+END
+movieoptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/1084/fceu/src/drivers/win/movieoptions.h
+END
+keyboard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/fceultra/!svn/ver/1873/fceu/src/drivers/win/keyboard.cpp
+END
+pref.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/1822/fceu/src/drivers/win/pref.h
+END
+tasedit.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/fceultra/!svn/ver/2077/fceu/src/drivers/win/tasedit.h
+END
+input.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/1873/fceu/src/drivers/win/input.h
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1011/fceu/src/drivers/win/SConscript
+END
+aviout.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/2015/fceu/src/drivers/win/aviout.cpp
+END
+wave.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/348/fceu/src/drivers/win/wave.h
+END
+memview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/2071/fceu/src/drivers/win/memview.cpp
+END
+fceu_x86.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/fceultra/!svn/ver/1452/fceu/src/drivers/win/fceu_x86.manifest
+END
+res.rc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/2079/fceu/src/drivers/win/res.rc
+END
+ntview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1758/fceu/src/drivers/win/ntview.cpp
+END
+directories.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/fceultra/!svn/ver/1515/fceu/src/drivers/win/directories.cpp
+END
+window.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/2042/fceu/src/drivers/win/window.h
+END
+state.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/1092/fceu/src/drivers/win/state.h
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/173/fceu/src/drivers/win/log.h
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/fceultra/!svn/ver/2018/fceu/src/drivers/win/main.h
+END
+cheat.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/fceultra/!svn/ver/1861/fceu/src/drivers/win/cheat.h
+END
+movieoptions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/fceultra/!svn/ver/2018/fceu/src/drivers/win/movieoptions.cpp
+END
+cdlogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/1431/fceu/src/drivers/win/cdlogger.h
+END
+help.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/fceultra/!svn/ver/354/fceu/src/drivers/win/help.h
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/fceultra/!svn/ver/1994/fceu/src/drivers/win/common.h
+END
+tasedit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/2079/fceu/src/drivers/win/tasedit.cpp
+END

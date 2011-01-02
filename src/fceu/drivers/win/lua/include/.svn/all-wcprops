@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include
+END
+lmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/lmem.h
+END
+lstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/lstate.h
+END
+ltm.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/ltm.h
+END
+llimits.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/llimits.h
+END
+lzio.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/lzio.h
+END
+lauxlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/fceultra/!svn/ver/655/fceu/src/drivers/win/lua/include/lauxlib.h
+END
+lua.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/lua.h
+END
+lua.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/fceultra/!svn/ver/655/fceu/src/drivers/win/lua/include/lua.hpp
+END
+lobject.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/lobject.h
+END
+luaconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/fceultra/!svn/ver/1500/fceu/src/drivers/win/lua/include/luaconf.h
+END
+lualib.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/fceultra/!svn/ver/655/fceu/src/drivers/win/lua/include/lualib.h
+END

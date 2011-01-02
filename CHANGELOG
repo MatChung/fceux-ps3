@@ -1,0 +1,442 @@
+changeset:   87:4a4368163e2b
+tag:         tip
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 20:33:38 2010 -0600
+summary:     - debug off
+
+changeset:   86:15b2f17598a1
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 20:32:27 2010 -0600
+summary:     - added resolution change back in
+
+changeset:   85:6e5f085bce89
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 19:22:03 2010 -0600
+summary:     - menu fixed up a bunch
+
+changeset:   84:7acfc2b9e1d8
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 15:17:34 2010 -0600
+summary:     - fixed a bug regarding not being able to select a shader
+
+changeset:   83:4f79c1e15ab5
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 13:32:28 2010 -0600
+summary:     - using the cellframework shader dir I added now
+
+changeset:   82:73f6bce8a43b
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 13:18:01 2010 -0600
+summary:     - updated cellrepo branch
+
+changeset:   81:6cc8dd68cdd1
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Nov 13 13:05:37 2010 -0600
+summary:     - added a bunch of shaders (HURRAY)
+
+changeset:   80:ff59610c5c8f
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Nov 12 17:30:34 2010 -0600
+summary:     - moved the conf subsystem from Square to its own directory
+
+changeset:   79:41d628c7a217
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Nov 12 15:56:22 2010 -0600
+summary:     - cleaned up headers
+
+changeset:   78:8643e25b9f9c
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Nov 12 15:33:12 2010 -0600
+summary:     - adding stock shader, crt curve shader
+
+changeset:   77:9a320f55c513
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Nov 12 14:27:42 2010 -0600
+summary:     - cleaned up proof of concept shader code
+
+changeset:   76:c3e640d6d21b
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Nov 12 13:32:30 2010 -0600
+summary:     - SHADER SUPPORT
+
+changeset:   75:1581eeedea2e
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Nov 12 01:03:31 2010 -0600
+summary:     - another major clean up. trying to get it ready for a break and to focus on shaders
+
+changeset:   74:09c1629f14b1
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Nov 11 22:45:23 2010 -0600
+summary:     - using newest cellframework
+
+changeset:   73:ee037f4ac7dc
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Nov 11 22:21:14 2010 -0600
+summary:     - test
+
+changeset:   72:83b1ca070826
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Nov 11 22:08:38 2010 -0600
+summary:     - updated Makefile with some DEBUG options
+
+changeset:   71:48ebbc44c0ae
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Nov 11 22:07:34 2010 -0600
+summary:     - more just trying to commit
+
+changeset:   70:83622b989b63
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Nov 11 22:07:23 2010 -0600
+summary:     - i hate mercurial, just trying to get these files committed
+
+changeset:   69:5dff9b0b8fd6
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Nov 10 01:02:09 2010 -0600
+summary:     - Filebrowser is no longer a massive global, now just a pointer. (globals very bad remember)
+
+changeset:   68:62bf5a05df8b
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 20:25:42 2010 -0600
+summary:     - moved PSGL struct defines into GraphicsType.h in cellframework
+
+changeset:   67:66d923f9ff02
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 19:57:50 2010 -0600
+summary:     - updated netlogger
+
+changeset:   66:92e871e2a744
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 18:47:34 2010 -0600
+summary:     - second attempt at sub repo
+
+changeset:   65:4eaea6e445bf
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 18:41:46 2010 -0600
+summary:     - removing sub repo, it failed...
+
+changeset:   64:7e2deea13edd
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 18:34:25 2010 -0600
+summary:     - moved hgsub to root, seemed to fix sub repo, me hopes.
+
+changeset:   63:21146d405cc2
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 18:32:51 2010 -0600
+summary:     - test
+
+changeset:   62:e1958eb75f20
+user:        Hans-Kristian Arntzen <maister@archlinux.us>
+date:        Tue Nov 02 20:34:19 2010 +0100
+summary:     Updates audio core. Fixes some fceu header stuff as well.
+
+changeset:   61:b0a59663d9e9
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Nov 02 10:34:48 2010 -0600
+summary:     - logger
+
+changeset:   60:c2c68c8ae2d8
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Nov 01 23:39:50 2010 -0600
+summary:     - fixed bugs of last commit
+
+changeset:   59:413a1237a51a
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Nov 01 23:35:16 2010 -0600
+summary:     - just cleaned up some things
+
+changeset:   58:94b53baf1103
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Nov 01 21:54:09 2010 -0600
+summary:     - removed old audio code
+
+changeset:   57:1db3681b5e18
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Nov 01 16:43:49 2010 -0600
+summary:     - big commit!
+
+changeset:   56:0f926dc099cb
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Nov 01 00:41:47 2010 -0600
+summary:     - filebrowser working great, not all functionality added yet tho
+
+changeset:   55:e688a68ca4d9
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Oct 30 12:48:44 2010 -0600
+summary:     - FileBrowser works much better now.  Still needs a small redesign.  Still crashes somewhere (but less often).
+
+changeset:   54:29e027d81045
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Oct 30 02:07:40 2010 -0600
+summary:     - updated filebrowser code (can traverse directories.  stalls ps3 somewhere)
+
+changeset:   53:5b2c14a41a68
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 29 01:29:11 2010 -0600
+summary:     - some basic comments
+
+changeset:   52:052696dc2d9f
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 29 01:26:31 2010 -0600
+summary:     - added cellframework
+
+changeset:   51:0b281d72240b
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 29 00:02:24 2010 -0600
+summary:     - mass refactoring of file structure
+
+changeset:   50:ee417b690168
+user:        Squarepusher
+date:        Thu Oct 28 22:22:03 2010 +0200
+summary:     Second attempt at including zlib and unzip folders
+
+changeset:   49:23e31f59941c
+user:        Squarepusher
+date:        Thu Oct 28 22:11:52 2010 +0200
+summary:     hg removed and hg added zlib and unzip folders in utils
+
+changeset:   48:ae3bcb28636c
+user:        Squarepusher
+date:        Thu Oct 28 21:58:47 2010 +0200
+summary:     Added -DPS3_SDK_3_41 again to Makefile so it compiles for 3.41 by default
+
+changeset:   47:a58347afd0e2
+user:        Squarepusher
+date:        Thu Oct 28 21:55:47 2010 +0200
+summary:     now compiles for both 3.41 and 1.92; new graphics driver works; analog controls fixed in Settings menu
+
+changeset:   46:d04d28286184
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 27 23:25:35 2010 -0600
+summary:     - real commit, last one was broken, same log
+
+changeset:   45:4ba05c699354
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 27 22:20:36 2010 -0600
+summary:     - new graphics driver for PSGL.  moving to c++.
+
+changeset:   44:54e5ebfcde91
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 27 11:23:36 2010 -0600
+summary:     - updated icon
+
+changeset:   43:6a93053cc90e
+user:        Squarepusher
+date:        Wed Oct 27 19:19:35 2010 +0200
+summary:     Fixed analog pressing right in settings menu
+
+changeset:   42:1751cca78a72
+user:        Squarepusher
+date:        Wed Oct 27 16:16:44 2010 +0200
+summary:     Now saves Controller Style to conf file as well
+
+changeset:   41:637ebace15e9
+user:        Squarepusher
+date:        Wed Oct 27 14:45:22 2010 +0200
+summary:     Can now read and save from config file - fceu.conf. This will be part of our general framework now - currently saves the settings 'PS3Smooth' and 'PS3KeepAspect' - next step would be to save the controller type too and the savepaths (SRAM, ROM dir, etc)
+
+changeset:   40:7c33500e427f
+user:        Squarepusher
+date:        Wed Oct 27 12:32:22 2010 +0200
+summary:     Brought settings screen up to date with that of SNES9x - press START on a given setting to set it back to default, sane setting - settings that are set to a default value are colored in green, settings that were changed from default are colored red; the text on the left that describes the setting is now colored yellow instead of the actual setting - better indicates which setting is selected; there is a global 'DEFAULT' setting that will change all the settings back to their default, sane values
+
+changeset:   39:4bbd253aba8a
+user:        Squarepusher
+date:        Wed Oct 27 11:27:34 2010 +0200
+summary:     L2 + R2 return to game shortcut was not working properly because it used 'WasButtonPressed' instead of 'IsButtonPressed' as it was done properly in emulator_implementation.cpp; changed that to 'IsButtonPressed' for L2 + R2 shortcut in menu, and now the L2 + R2 shortcut button works properly again.
+
+changeset:   38:9666b0a3cb7d
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 27 02:09:10 2010 -0600
+summary:     - header change
+
+changeset:   37:c00a38690155
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 27 01:57:50 2010 -0600
+summary:     - can select state in game using right analog stick (right or left on it)
+
+changeset:   36:7e5b345f9db6
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 26 22:31:12 2010 -0600
+summary:     - sram support added (auto saves on fceu exit, exit to menu and hopefully if you hold powerbutton down to power off...)
+
+changeset:   35:1e33b0a488c0
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 26 02:39:14 2010 -0600
+summary:     - updated README and added CHANGELOG
+
+changeset:   34:745b426ef9a4
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 26 02:29:31 2010 -0600
+summary:     - state saving working to USRDIR
+
+changeset:   33:3be285f90bf2
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 26 01:56:13 2010 -0600
+summary:     - can state save and load from a single state save file using FCEU API none the less
+
+changeset:   32:25a0b79bf25c
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 26 01:39:28 2010 -0600
+summary:     - new controller style (original and better).  see settings window
+
+changeset:   31:db48cb17f7d8
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 26 00:51:28 2010 -0600
+summary:     - zip support! only single file zip :(
+
+changeset:   30:1bbf3a5c6cea
+user:        Hans-Kristian Arntzen <maister@archlinux.us>
+date:        Mon Oct 25 21:10:42 2010 +0200
+summary:     Some slight adjustment to audio code.
+
+changeset:   29:269a1fcf2831
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 22:12:40 2010 -0600
+summary:     - README added (again)
+
+changeset:   28:596f8eea55c2
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 19:58:20 2010 -0600
+summary:     - replaced icon with simpler one for now
+
+changeset:   27:b249c682f0a4
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 19:57:08 2010 -0600
+summary:     - cleaned up
+
+changeset:   26:d39e4c9db86a
+parent:      24:1778cb96df95
+user:        Squarepusher
+date:        Mon Oct 25 03:06:30 2010 +0200
+summary:     Removed SNES9x-specific settings from Settings screen
+
+changeset:   25:5f51bc37b7ca
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 18:16:33 2010 -0600
+summary:     - almost ready for release
+
+changeset:   24:1778cb96df95
+user:        Squarepusher
+date:        Mon Oct 25 01:41:32 2010 +0200
+summary:     Added 'Hardware Filtering' setting; Added 'Aspect Ratio' setting; made Resolution switching work; Added analog controls; Edited PARAM.SFO and flagged 1080p, 720p
+
+changeset:   23:e6927e662d45
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 15:41:43 2010 -0600
+summary:     - Audio works! (thanks TheMaister for fixing the problem of mono to stereo)
+
+changeset:   22:e5f104373140
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 14:34:23 2010 -0600
+summary:     - more missing files, sorry folks!
+
+changeset:   21:36b4936b5ce6
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 14:32:30 2010 -0600
+summary:     - removed old audio driver
+
+changeset:   20:29a26f1cd960
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 14:30:47 2010 -0600
+summary:     - input works perfectly now for 1player
+
+changeset:   19:d712f45cd190
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 11:57:22 2010 -0600
+summary:     - removed -lz from Makefile
+
+changeset:   18:ee0dcaf99b4d
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 11:40:40 2010 -0600
+summary:     - ooops, bad include line
+
+changeset:   17:7e8621160601
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 11:33:52 2010 -0600
+summary:     - no more white wash out (rendering works fine now, HURRAY)
+
+changeset:   16:9c6f68418185
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 03:27:12 2010 -0600
+summary:     - added input support for normal game pads
+
+changeset:   15:b47017c48dd9
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 01:56:41 2010 -0600
+summary:     - graphics are just a bit to white now.  it is the 8bit to 32bit using palette conversion problem me thinks.
+
+changeset:   14:e10dc036a78f
+user:        halsafar@hal-vm-ubuntu
+date:        Sun Oct 24 01:15:59 2010 -0600
+summary:     - renders correct screen now, all blue though... PROGRESS
+
+changeset:   13:75a229b8554b
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Oct 23 02:11:35 2010 -0600
+summary:     - audio working but no buffering done so it sounds horrible, know why but to tired
+
+changeset:   12:1fd133b946b6
+user:        halsafar@hal-vm-ubuntu
+date:        Sat Oct 23 02:08:05 2010 -0600
+summary:     - emudebug enabled in this build (ethernet cable needed for control console)
+
+changeset:   11:7b9cca64db82
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 22 22:44:22 2010 -0600
+summary:     - returned code back to broken opengl blit only mode (I know whats wrong, next commit should render)
+
+changeset:   10:fb11f6e68c70
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 22 17:03:56 2010 -0600
+summary:     - adding the porting doc finally...
+
+changeset:   9:9877947607a0
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 22 17:01:31 2010 -0600
+summary:     - ported the new driver changes i made to snes9x-ps3
+
+changeset:   8:97efa47002d2
+user:        halsafar@hal-vm-ubuntu
+date:        Fri Oct 22 00:27:55 2010 -0600
+summary:     - ROM LOADING WORKS
+
+changeset:   7:7acf5f3dd5d1
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Oct 21 00:35:05 2010 -0600
+summary:     - prints meaningful error messages to the screen...
+
+changeset:   6:08fcb36cd4dc
+user:        halsafar@hal-vm-ubuntu
+date:        Thu Oct 21 00:10:10 2010 -0600
+summary:     - plugged in cell console for debugging
+
+changeset:   5:caf92644a055
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 13 12:52:44 2010 -0600
+summary:     - added cell audio init (no emu sound attempted)
+
+changeset:   4:7d9282dc085a
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 13 02:04:32 2010 -0600
+summary:     - hacked alloca into netplay just it would compile again
+
+changeset:   3:c5aa6a01701b
+user:        halsafar@hal-vm-ubuntu
+date:        Wed Oct 13 00:25:46 2010 -0600
+summary:     - still compiles :)
+
+changeset:   2:a822c811435b
+user:        halsafar@hal-vm-ubuntu
+date:        Tue Oct 12 23:55:19 2010 -0600
+summary:     - COMPILES!
+
+changeset:   1:dde2dec01a5c
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Oct 11 23:52:41 2010 -0600
+summary:     - this build no longer compiles.  half way into getting fceu to compile properly.
+
+changeset:   0:b636102a7ce5
+user:        halsafar@hal-vm-ubuntu
+date:        Mon Oct 11 22:15:52 2010 -0600
+summary:     - initial commit
+

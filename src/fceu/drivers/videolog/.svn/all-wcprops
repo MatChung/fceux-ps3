@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/fceultra/!svn/ver/1281/fceu/src/drivers/videolog
+END
+simd.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/fceultra/!svn/ver/931/fceu/src/drivers/videolog/simd.h
+END
+nesvideos-piece.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/fceultra/!svn/ver/931/fceu/src/drivers/videolog/nesvideos-piece.cpp
+END
+quantize.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/931/fceu/src/drivers/videolog/quantize.h
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/fceultra/!svn/ver/1281/fceu/src/drivers/videolog/SConscript
+END
+nesvideos-piece.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/fceultra/!svn/ver/931/fceu/src/drivers/videolog/nesvideos-piece.h
+END
+rgbtorgb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/fceultra/!svn/ver/931/fceu/src/drivers/videolog/rgbtorgb.cpp
+END
+rgbtorgb.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/fceultra/!svn/ver/931/fceu/src/drivers/videolog/rgbtorgb.h
+END

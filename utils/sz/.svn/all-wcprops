@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/436/trunk/source/utils/sz
+END
+7zBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/427/trunk/source/utils/sz/7zBuffer.h
+END
+7zExtract.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/427/trunk/source/utils/sz/7zExtract.h
+END
+7zDecode.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/427/trunk/source/utils/sz/7zDecode.c
+END
+LzmaDecode.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/427/trunk/source/utils/sz/LzmaDecode.c
+END
+7zDecode.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/427/trunk/source/utils/sz/7zDecode.h
+END
+7zHeader.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/427/trunk/source/utils/sz/7zHeader.c
+END
+7zAlloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/427/trunk/source/utils/sz/7zAlloc.c
+END
+LzmaDecode.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/427/trunk/source/utils/sz/LzmaDecode.h
+END
+7zMethodID.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/427/trunk/source/utils/sz/7zMethodID.c
+END
+7zHeader.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/427/trunk/source/utils/sz/7zHeader.h
+END
+7zItem.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/427/trunk/source/utils/sz/7zItem.c
+END
+7zAlloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/427/trunk/source/utils/sz/7zAlloc.h
+END
+7zMethodID.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/427/trunk/source/utils/sz/7zMethodID.h
+END
+7zItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/427/trunk/source/utils/sz/7zItem.h
+END
+7zIn.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/427/trunk/source/utils/sz/7zIn.c
+END
+7zCrc.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/427/trunk/source/utils/sz/7zCrc.c
+END
+7zTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/427/trunk/source/utils/sz/7zTypes.h
+END
+7zBuffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/427/trunk/source/utils/sz/7zBuffer.c
+END
+7zExtract.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/436/trunk/source/utils/sz/7zExtract.c
+END
+7zIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/427/trunk/source/utils/sz/7zIn.h
+END
+LzmaTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/427/trunk/source/utils/sz/LzmaTypes.h
+END
+7zCrc.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/427/trunk/source/utils/sz/7zCrc.h
+END
