@@ -128,8 +128,8 @@ PPU_CXXFLAGS		+=	-DFRAMESKIP
 PPU_CFLAGS		+=	-DFRAMESKIP
 
 # enable LUA
-#PPU_CXXFLAGS		+=	-D_S9XLUA_H
-#PPU_CFLAGS		+=	-D_S9XLUA_H
+#PPU_CXXFLAGS		+=	-D_S9XLUA_H -I$(FCEU_API_DIR)/lua/src 
+#PPU_CFLAGS		+=	-D_S9XLUA_H -I$(FCEU_API_DIR)/lua/src
 
 # enable FCEU debugging
 # enable telnet control console
